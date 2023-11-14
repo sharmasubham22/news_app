@@ -6,9 +6,7 @@ export default function Navbar(props) {
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <img
-            src={
-              "https://st2.depositphotos.com/6789684/12262/v/450/depositphotos_122620866-stock-illustration-illustration-of-flat-icon.jpg"
-            }
+            src={"https://cdn-icons-png.flaticon.com/512/3174/3174915.png"}
             alt=""
             width="30"
             height="24"
