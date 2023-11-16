@@ -7,9 +7,12 @@ export class NewsItem extends Component {
     return (
       <div className="my-3">
         <div className="card">
-          <span class="position-absolute top-0  translate-middle badge rounded-pill bg-danger" style={{left:'80%', zIndex:'1'}}>
+          <span
+            className="position-absolute top-0  translate-middle badge rounded-pill bg-danger"
+            style={{ left: "80%", zIndex: "1" }}
+          >
             {source}
-            <span class="visually-hidden">unread messages</span>
+            <span className="visually-hidden">unread messages</span>
           </span>
           <img
             src={
@@ -28,13 +31,18 @@ export class NewsItem extends Component {
             <p style={{ fontSize: "14px" }} className="card-text">
               {description}...
             </p>
-            <p class="card-text" style={{ fontSize: "14px" }}>
+            <p className="card-text" style={{ fontSize: "14px" }}>
               <small className="text-muted">
                 By {!author ? "Unknown" : author} on{" "}
                 {new Date(date).toGMTString()}
               </small>
             </p>
-            <a href={newsId} className="btn btn-sm btn-dark">
+            <a
+              href={newsId}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-sm btn-dark"
+            >
               Read Full Story
             </a>
           </div>
